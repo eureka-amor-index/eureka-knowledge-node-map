@@ -1,74 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
   <meta name="google-site-verification" content="zFUrud46J7zDW3yoVVgfpVgIVd4U497dZCNQsPqqFSw" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Eureka Amor Knowledge Node Map</title>
+  <meta
+    name="description"
+    content="Knowledge node map of Eureka Amor — SXO strategist, creative technologist and artist."
+  />
+  <link rel="canonical" href="https://eureka-amor-index.github.io/eureka-knowledge-node-map/" />
+  <meta name="author" content="Eureka Amor" />
+  <meta name="theme-color" content="#060816" />
 
-  <meta name="description" content="Knowledge node map of Eureka Amor — SXO strategist, creative technologist and artist.">
-  <link rel="canonical" href="https://eureka-amor-index.github.io/eureka-knowledge-node-map/">
-  <meta name="author" content="Eureka Amor">
+  <link rel="icon" href="assets/favicon.png" />
 
-  <link rel="icon" href="assets/favicon.png">
+  <meta property="og:title" content="Eureka Amor Knowledge Node Map" />
+  <meta property="og:description" content="Explore the digital constellation of Eureka Amor" />
+  <meta property="og:image" content="https://eureka-amor-index.github.io/eureka-knowledge-node-map/assets/og-image.png" />
+  <meta property="og:url" content="https://eureka-amor-index.github.io/eureka-knowledge-node-map/" />
+  <meta property="og:type" content="website" />
 
-  <meta property="og:title" content="Eureka Amor Knowledge Node Map">
-  <meta property="og:description" content="Explore the digital constellation of Eureka Amor">
-  <meta property="og:image" content="https://eureka-amor-index.github.io/eureka-knowledge-node-map/assets/og-image.png">
-  <meta property="og:url" content="https://eureka-amor-index.github.io/eureka-knowledge-node-map/">
-  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Eureka Amor Knowledge Node Map" />
+  <meta name="twitter:image" content="https://eureka-amor-index.github.io/eureka-knowledge-node-map/assets/og-image.png" />
+  <meta name="twitter:site" content="@amorandcontext" />
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Eureka Amor Knowledge Node Map">
-  <meta name="twitter:image" content="https://eureka-amor-index.github.io/eureka-knowledge-node-map/assets/og-image.png">
-  <meta name="twitter:site" content="@amorandcontext">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="stars"></div>
+  <div class="space-gradient"></div>
+  <div class="mouse-glow" id="mouseGlow"></div>
+  <canvas id="starCanvas" aria-hidden="true"></canvas>
 
-  <header>
-    <img src="assets/favicon.png" class="planet" alt="Eureka Amor planet icon">
+  <main class="page-shell">
+    <header>
+      <img src="assets/favicon.png" class="planet" alt="Eureka Amor planet icon" />
 
-    <h1>Eureka Amor</h1>
+      <h1>Eureka Amor</h1>
 
-    <p class="subtitle">
-      Human ↔ Algorithm Interface
-    </p>
-  </header>
+      <p class="subtitle">
+        Human ↔ Algorithm Interface
+      </p>
+    </header>
 
-  <section class="map">
-    <a class="node" href="https://www.linkedin.com/in/eurekaamor/" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
+    <section class="map">
+      <a class="node" href="https://www.linkedin.com/in/eurekaamor/" target="_blank" rel="noopener noreferrer">
+        💼 LinkedIn
+      </a>
 
-    <a class="node" href="https://github.com/eureka-amor-index" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
+      <a class="node" href="https://github.com/eureka-amor-index" target="_blank" rel="noopener noreferrer">
+        🐙 GitHub
+      </a>
 
-    <a class="node" href="https://codepen.io/eureka-amor-index" target="_blank" rel="noopener noreferrer">💻 CodePen</a>
+      <a class="node" href="https://codepen.io/eureka-amor-index" target="_blank" rel="noopener noreferrer">
+        💻 CodePen
+      </a>
 
-    <a class="node" href="https://www.instagram.com/eureka_amor" target="_blank" rel="noopener noreferrer">📷 Instagram</a>
+      <a class="node" href="https://www.instagram.com/eureka_amor" target="_blank" rel="noopener noreferrer">
+        📷 Instagram
+      </a>
 
-    <a class="node" href="https://www.youtube.com/@eurekaamor" target="_blank" rel="noopener noreferrer">📺 YouTube</a>
+      <a class="node" href="https://www.youtube.com/@eurekaamor" target="_blank" rel="noopener noreferrer">
+        📺 YouTube
+      </a>
 
-    <a class="node" href="https://www.tiktok.com/@eurekaamor" target="_blank" rel="noopener noreferrer">🎵 TikTok</a>
+      <a class="node" href="https://www.tiktok.com/@eurekaamor" target="_blank" rel="noopener noreferrer">
+        🎵 TikTok
+      </a>
 
-    <a class="node" href="https://maps.app.goo.gl/5NxoXsLnkbuaBRUq9" target="_blank" rel="noopener noreferrer">📍 Maps</a>
+      <a class="node" href="https://maps.app.goo.gl/5NxoXsLnkbuaBRUq9" target="_blank" rel="noopener noreferrer">
+        📍 Maps
+      </a>
 
-    <a class="node" href="https://codepen.io/eureka-amor-index/full/azZQvao" target="_blank" rel="noopener noreferrer">
-      🌐 https://eurekaamor.com.ar
-    </a>
-  </section>
+      <a class="node main-node" href="https://codepen.io/eureka-amor-index/full/azZQvao" target="_blank" rel="noopener noreferrer">
+        🌐 https://eurekaamor.com.ar
+      </a>
+    </section>
 
-  <footer>
-    <p>SXO Lab · Entity Experiment</p>
-  </footer>
+    <footer>
+      <p>SXO Lab · Entity Experiment</p>
+    </footer>
+  </main>
 
-  <audio id="spaceSound" autoplay loop muted preload="auto">
-  <source src="assets/space-ambience.mp3" type="audio/mpeg">
-</audio>
+  <audio id="spaceSound" loop preload="auto">
+    <source src="assets/space-ambience.mp3" type="audio/mpeg" />
+  </audio>
 
   <script src="script.js"></script>
 </body>
