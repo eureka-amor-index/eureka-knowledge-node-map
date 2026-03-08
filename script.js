@@ -98,10 +98,12 @@ audio.play().catch(()=>{});
 
 }
 
-}
-
-// start on first interaction
+  // start on first interaction
 
 document.addEventListener("click", startSound, { once:true });
 
 document.addEventListener("touchstart", startSound, { once:true });
+
+}
+
+
