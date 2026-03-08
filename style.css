@@ -1,0 +1,64 @@
+body{
+background:#050510;
+color:white;
+font-family:Arial, sans-serif;
+text-align:center;
+overflow-x:hidden;
+}
+
+header{
+margin-top:60px;
+}
+
+h1{
+font-size:48px;
+color:#7ee7ff;
+text-shadow:0 0 20px #00f7ff;
+}
+
+.subtitle{
+opacity:0.7;
+}
+
+.planet{
+width:160px;
+animation:float 6s infinite ease-in-out;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-20px)}
+100%{transform:translateY(0)}
+}
+
+.map{
+margin-top:60px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.node{
+padding:20px 30px;
+border-radius:30px;
+background:#101028;
+border:1px solid #7ee7ff;
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.node:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px #00f7ff;
+}
+
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+background:url("https://www.transparenttextures.com/patterns/stardust.png");
+opacity:0.3;
+pointer-events:none;
+}
