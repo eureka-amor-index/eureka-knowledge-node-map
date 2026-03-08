@@ -17,6 +17,30 @@ function randomMessage() {
 setInterval(randomMessage, 5000);
 
 const audio = document.getElementById("spaceSound");
+
+window.addEventListener("load", () => {
+
+audio.muted = false;
+
+audio.volume = 0;
+
+audio.play();
+
+let fade = setInterval(() => {
+
+if(audio.volume < 0.25){
+
+audio.volume += 0.02;
+
+}else{
+
+clearInterval(fade);
+
+}
+
+},200);
+
+});
 const nodes = document.querySelectorAll(".node");
 const planet = document.querySelector(".planet");
 
