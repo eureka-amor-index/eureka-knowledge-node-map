@@ -83,3 +83,25 @@ planet.addEventListener("click",()=>{
 alert("🌌 Hello from the SXO Lab");
 
 });
+
+// space ambience sound
+
+const audio = document.getElementById("spaceSound");
+
+function startSound(){
+
+if(audio){
+
+audio.volume = 0.25;
+
+audio.play().catch(()=>{});
+
+}
+
+}
+
+// start on first interaction
+
+document.addEventListener("click", startSound, { once:true });
+
+document.addEventListener("touchstart", startSound, { once:true });
